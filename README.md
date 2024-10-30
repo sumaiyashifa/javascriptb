@@ -353,6 +353,34 @@ JavaScript has 7 primitive data types:
 -null
 
 -undefined
+```
+typeof "Hello";        // "string"
+typeof 42;             // "number"
+typeof true;           // "boolean"
+typeof undefined;      // "undefined"
+typeof Symbol("id");   // "symbol"
+typeof 9007199254740991n; // "bigint"
+```
+typeof null returns "object" due to an early JavaScript design bug. Although null is technically its own primitive type, it shows up as "object".
+```
+typeof null; // "object"
+```
+
+Complex Data Types
+
+A complex data type can store multiple values and/or different data types together.
+
+JavaScript has one complex data type:
+
+object
+
+All other complex types like arrays, functions, sets, and maps are just different types of objects.
+
+The typeof operator returns only two types:
+
+object
+
+function
 
 ---
 
