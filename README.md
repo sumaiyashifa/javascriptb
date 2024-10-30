@@ -42,6 +42,8 @@ const z = x + y;
 
 
 Value = undefined
+
+
 In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
 
 A variable declared without a value will have the value undefined.
@@ -113,7 +115,10 @@ output:250
 - **Assignment Operators**:
 
 - JavaScript uses an assignment operator ( = ) to assign values to variables:
-![image](https://github.com/user-attachments/assets/1b50a97d-f791-43d1-8df4-728e0187cca6)
+
+  
+![image](https://github.com/user-attachments/assets/d2381bf9-e57b-4e7e-b6a9-f41e53eca971)
+
 
 
 ---
