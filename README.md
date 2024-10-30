@@ -177,6 +177,17 @@ For example, 5 === "5" would be false because the value 5 is of type number, a
 In general, it is recommended to use === (strict equality) to avoid unexpected results due to type coercion. Using === ensures that both the value and the type are the same for the comparison to be true.
 
 
+JavaScript Logical Operators:
+
+
+![image](https://github.com/user-attachments/assets/89b9e58f-7995-4b8f-b546-61d0af1bec50)
+
+
+JavaScript Bitwise Operators:
+
+
+![image](https://github.com/user-attachments/assets/6706687a-b8ea-4134-84ce-46cf14daf592)
+
 
 ---
 
