@@ -186,9 +186,63 @@ JavaScript Logical Operators:
 JavaScript Bitwise Operators:
 
 
-![image](https://github.com/user-attachments/assets/6706687a-b8ea-4134-84ce-46cf14daf592)
+![image](https://github.com/user-attachments/assets/f4e49dd0-4332-4cf3-874a-8581848374ee)
 
 
+In JavaScript, the >> and >>> are bitwise right shift operators.
+>> (Signed Right Shift):
+The >> operator shifts the bits of a number to the right. It preserves the sign bit, which means that if the number is positive, it pads the left side with zeros, and if the number is negative, it pads the left side with ones.
+Example: x >> y shifts the bits of x to the right by y positions.
+>>> (Unsigned Right Shift):
+The >>> operator also shifts the bits to the right, but it always pads the left side with zeros, regardless of the sign of the number. It treats the number as if it were an unsigned integer.
+Example: x >>> y shifts the bits of x to the right by y positions, and the left side is always padded with zeros.
+Here's a quick example to illustrate the difference:
+
+
+```
+let x = -8;
+
+console.log(x >> 2);   // Output: -2 (Signed right shift)
+console.log(x >>> 2);  // Output: 1073741822 (Unsigned right shift)
+```
+
+
+In the example, x >> 2 performs a signed right shift, while x >>> 2 performs an unsigned right shift.
+
+
+JavaScript Demo: Expressions - Bitwise AND
+
+
+```
+const a = 5; // 00000000000000000000000000000101
+const b = 3; // 00000000000000000000000000000011
+
+console.log(a & b); // 00000000000000000000000000000001
+// Expected output: 1
+```
+
+
+Bitwise AND assignment:
+
+
+```
+let a = 5; // 00000000000000000000000000000101
+a &= 3; // 00000000000000000000000000000011
+
+console.log(a); // 00000000000000000000000000000001
+// Expected output: 1
+```
+x &= y
+
+
+x &= y is equivalent to x = x & y, except that the expression x is only evaluated once.
+
+```
+let a = 5;
+// 5:     00000000000000000000000000000101
+// 2:     00000000000000000000000000000010
+a &= 2; // 0
+```
 ---
 
 ## 2. Operators
