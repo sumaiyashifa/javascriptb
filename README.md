@@ -310,10 +310,7 @@ JavaScript String Operators are used to manipulate and perform operations on str
 Type of JavaScript String Operators
 
 
-There are two type of String Operators in JavaScript, these are:
 
--String Concatenate Operator
--String Concatenate Assignment Operator
 
 1. Concatenation (+ Operator)
 
@@ -332,6 +329,30 @@ The += operator appends one string to another and assigns the result to the orig
 let message = "Hello";
 message += ", world!"; // message becomes "Hello, world!"
 ```
+
+
+The typeof Operator:
+
+
+The typeof operator returns the data type of a JavaScript variable.
+
+
+JavaScript has 7 primitive data types:
+
+
+-string
+
+-number
+
+-boolean
+
+-bigint
+
+-symbol
+
+-null
+
+-undefined
 
 ---
 
