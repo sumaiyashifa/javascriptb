@@ -125,6 +125,56 @@ output:250
 ![image](https://github.com/user-attachments/assets/d2381bf9-e57b-4e7e-b6a9-f41e53eca971)
 
 
+Assignment operators assign values to JavaScript variables.
+
+
+![image](https://github.com/user-attachments/assets/b59f3967-3a77-4c95-bab2-30a26e9729e8)
+
+```
+Example
+let text = "Hello"; text += " World";
+output:Hello World
+```
+
+Simple Assignment and Chaining:
+
+
+```
+let x = 5;
+let y = 10;
+let z = 25;
+
+x = y; // x is 10
+x = y = z; // x, y and z are all 25
+```
+
+
+The assignment expression itself evaluates to the value of the right-hand side, so you can log the value and assign to a variable at the same time.
+
+
+
+```
+let x;
+console.log(x); // undefined
+console.log(x = 2); // 2
+console.log(x); // 2
+```
+
+
+JavaScript Comparison Operators!
+
+
+![image](https://github.com/user-attachments/assets/f3e76ba9-3de1-414f-addc-8658a21d5d1e)
+
+
+In JavaScript, == and === are two different comparison operators used to compare values.
+== (Equality Operator):
+This operator checks for equality after performing type coercion. It converts the operands to the same type before making the comparison.
+For example, 5 == "5" would be true because the string "5" is coerced to the number 5 during the comparison.
+=== (Strict Equality Operator):
+This operator checks for equality without performing type coercion. It compares both the value and the type of the operands.
+For example, 5 === "5" would be false because the value 5 is of type number, and the string "5" is of type string.
+In general, it is recommended to use === (strict equality) to avoid unexpected results due to type coercion. Using === ensures that both the value and the type are the same for the comparison to be true.
 
 
 
