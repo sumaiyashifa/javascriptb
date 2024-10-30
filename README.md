@@ -301,6 +301,38 @@ let result= age>18?"adult":"notAdult";
 console.log(result)
 output:notAdult
 ```
+JavaScript String Operators:
+
+
+JavaScript String Operators are used to manipulate and perform operations on strings. There are two operators which are used to modify strings in JavaScript. These operators help us to join one string to another string.
+
+
+Type of JavaScript String Operators
+
+
+There are two type of String Operators in JavaScript, these are:
+
+-String Concatenate Operator
+-String Concatenate Assignment Operator
+
+1. Concatenation (+ Operator)
+
+
+The + operator is used to join two or more strings together.
+
+```
+let greeting = "Hello, " + "world!"; // Output: "Hello, world!"
+```
+
+2. Concatenation Assignment (+= Operator)
+
+   
+The += operator appends one string to another and assigns the result to the original variable.
+```
+let message = "Hello";
+message += ", world!"; // message becomes "Hello, world!"
+```
+
 ---
 
 ## 2. Operators
