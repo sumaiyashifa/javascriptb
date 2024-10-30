@@ -40,6 +40,21 @@ const y = 6;
 const z = x + y;
 ```
 
+
+Value = undefined
+In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+A variable declared without a value will have the value undefined.
+
+The variable carName will have the value undefined after the execution of this statement:
+
+
+```Let
+Example
+let carName;
+```
+
+
 Variables defined with let cannot be redeclared.
 You cannot accidentally redeclare a variable.
 
@@ -67,14 +82,7 @@ const PI = 3.14159265359;
 
 
 
-- **let**: Block-scoped and can be updated but not redeclared within the same scope.
-- **var**: Function-scoped and can be updated and redeclared.
-- **const**: Block-scoped and cannot be updated or redeclared.
 
-```javascript
-let x = 10;
-var y = 20;
-const z = 30;
 ```
 
 ---
