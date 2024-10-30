@@ -5,6 +5,18 @@ This tutorial covers essential JavaScript concepts to help you get started or en
 
 ---
 
+## Index
+
+1. [Variables](#1-variables)
+2. [Operators](#2-operators)
+3. [Data Types](#3-data-types)
+4. [Functions](#4-functions)
+5. [Loops](#5-loops)
+6. [Objects](#6-objects)
+7. [Error Handling](#7-error-handling)
+
+---
+
 ## 1. Variables
 
 In JavaScript, variables are containers for storing data values. They can be declared using three keywords:
