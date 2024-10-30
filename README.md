@@ -46,10 +46,10 @@ You cannot accidentally redeclare a variable.
 
 With let you can not do this:
 
-
+```Let
 let x = "John Doe";
 let x = 0;
-
+```
 
 But with var you can do this.
 
