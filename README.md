@@ -98,6 +98,8 @@ Output:1
 ```
 
 Arithmetic operators are used to perform arithmetic on numbers:
+
+
 ![image](https://github.com/user-attachments/assets/cb0b74f1-43c7-4161-b8d0-b71bc4e7fa3a)
 
 
