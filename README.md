@@ -121,6 +121,13 @@ output:250
 
 
 
+Arithmetic operators are used to perform arithmetic on numbers:
+
+
+![image](https://github.com/user-attachments/assets/64df6e7d-4174-46a6-bb68-c189b8b1f57e)
+
+
+
 ---
 
 ## 2. Operators
