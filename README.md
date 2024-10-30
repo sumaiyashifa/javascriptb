@@ -78,7 +78,7 @@ As a general rule, always declare a variable with const unless you know that t
 
 
 
-![image](images/Screenshot 2024-10-30 143719.png)
+![image](./images/Screenshot 2024-10-30 143719.png)
 
 
 
