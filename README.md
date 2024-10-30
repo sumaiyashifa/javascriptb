@@ -26,19 +26,19 @@ An equal sign is used to assign values to variables.
 
 -Example using  **let**:
 
-
+```Let
 let a=4;
 let b=5;
 console.log(a**b); //4^5
-
+```
 
 -Example using **const**:
 
-
+```Const
 const x = 5;
 const y = 6;
 const z = x + y;
-
+```
 
 Variables defined with let cannot be redeclared.
 You cannot accidentally redeclare a variable.
