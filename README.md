@@ -378,37 +378,39 @@ All other complex types like arrays, functions, sets, and maps are just differen
 
 The typeof operator returns only two types:
 
-object
+-object
 
-function
-
----
-
-## 2. Operators
+-function
 
 
-JavaScript uses arithmetic operators ( + - * / ) to compute values:
-![Uploading image.png…]()
-
-
-
-JavaScript supports various operators:
-
-- **Arithmetic Operators**: `+`, `-`, `*`, `/`, `%`, `++`, `--`
-- **Assignment Operators**: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
-- **Comparison Operators**: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
-- **String Operators**: `+` (concatenation)
-- **Logical Operators**: `&&`, `||`, `!`
-- **Bitwise Operators**: `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`
-- **Ternary Operator**: `condition ? expr1 : expr2`
-- **Type Operators**: `typeof`, `instanceof`
-- **Spread Operator**: `...` (used to expand arrays, objects, etc.)
-
-```javascript
-let result = (5 > 3) ? "True" : "False"; // Ternary example
+Example:
 ```
+typeof {name:'John'}   // Returns object
+typeof [1,2,3,4]       // Returns object
+typeof new Map()       // Returns object
+typeof new Set()       // Returns object
 
+typeof function (){}   // Returns function
+```
+## The instanceof Operator:
+
+The instanceof operator returns true if an object is an instance of a specified object type:
+```
+// Create a Date
+const time = new Date();
+
+(time instanceof Date);
+Output:Date:True
+```
+```
+const myArray = [1, 2, 3];
+console.log(myArray instanceof Array);    // Output: true
+console.log(myArray instanceof Object);   // Output: true
+console.log(myArray instanceof Date);     // Output: false
+```
 ---
+
+
 
 ## 3. Data Types
 
