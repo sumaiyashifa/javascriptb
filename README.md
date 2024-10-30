@@ -72,7 +72,7 @@ Variables defined with const cannot be Redeclared.
 Variables defined with const cannot be Reassigned.
 Variables defined with const have Block Scope.
 As a general rule, always declare a variable with const unless you know that the value will change.
-const PI = 3.14159265359;
+
 ![image](https://github.com/user-attachments/assets/547c2125-90af-417d-85c3-bfd8a9637d2b)
 
 
