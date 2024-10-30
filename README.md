@@ -182,6 +182,25 @@ JavaScript Logical Operators:
 
 ![image](https://github.com/user-attachments/assets/89b9e58f-7995-4b8f-b546-61d0af1bec50)
 
+Logical AND:
+
+```
+const a = 3;
+const b = -2;
+
+console.log(a > 0 && b > 0);
+// Expected output: false
+```
+
+ Logical NOT:
+```
+const a = 3;
+const b = -2;
+
+console.log(!(a > 0 || b > 0));
+// Expected output: false
+```
+
 
 JavaScript Bitwise Operators:
 
@@ -242,6 +261,45 @@ let a = 5;
 // 5:     00000000000000000000000000000101
 // 2:     00000000000000000000000000000010
 a &= 2; // 0
+```
+
+Bitwise NOT:
+
+
+
+```
+const a = 5; // 00000000000000000000000000000101
+const b = -3; // 11111111111111111111111111111101
+
+console.log(~a); // 11111111111111111111111111111010
+// Expected output: -6
+
+console.log(~b); // 00000000000000000000000000000010
+// Expected output: 2
+```
+Bitwise XOR:
+
+
+The bitwise XOR (^) operator returns a number or BigInt whose binary representation has a 1 in each bit position for which the corresponding bits of either but not both operands are 1.
+
+```
+const a = 5; // 00000000000000000000000000000101
+const b = 3; // 00000000000000000000000000000011
+
+console.log(a ^ b); // 00000000000000000000000000000110
+// Expected output: 6
+```
+
+Conditional (ternary) operator:
+
+
+The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement
+
+```
+let age=18;
+let result= age>18?"adult":"notAdult";
+console.log(result)
+output:notAdult
 ```
 ---
 
