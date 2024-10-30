@@ -22,21 +22,35 @@ This tutorial covers essential JavaScript concepts to help you get started or en
 In a programming language, variables are used to store data values.
 JavaScript uses the keywords var, let and const to declare variables.
 An equal sign is used to assign values to variables.
+
+
 -Example using  **let**:
+
+
 let a=4;
 let b=5;
 console.log(a**b); //4^5
 
+
 -Example using **const**:
+
+
 const x = 5;
 const y = 6;
 const z = x + y;
 
+
 Variables defined with let cannot be redeclared.
 You cannot accidentally redeclare a variable.
+
+
 With let you can not do this:
+
+
 let x = "John Doe";
 let x = 0;
+
+
 But with var you can do this.
 
 Variables defined with const cannot be Redeclared.
