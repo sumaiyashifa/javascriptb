@@ -89,7 +89,7 @@ As a general rule, always declare a variable with const unless you know that t
 
 JavaScript uses arithmetic operators ( + - * / ) to compute values:
 
-```
+```arithmatic
 Example
 let x = 5;
 let y = 2;
@@ -107,7 +107,15 @@ Operator precedence describes the order in which operations are performed in an 
 ```
 Example
 let x = 100 + 50 * 3;
+output:250
 ```
+
+- **Assignment Operators**:
+
+- JavaScript uses an assignment operator ( = ) to assign values to variables:
+![image](https://github.com/user-attachments/assets/1b50a97d-f791-43d1-8df4-728e0187cca6)
+
+
 ---
 
 ## 2. Operators
