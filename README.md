@@ -84,12 +84,32 @@ As a general rule, always declare a variable with const unless you know that t
 
 
 
+## 2. Operators
+
+
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
 
 ```
+Example
+let x = 5;
+let y = 2;
+let z = x % y;
+Output:1
+```
+
+Arithmetic operators are used to perform arithmetic on numbers:
+![image](https://github.com/user-attachments/assets/cb0b74f1-43c7-4161-b8d0-b71bc4e7fa3a)
+
 
 ---
 
 ## 2. Operators
+
+
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
+![Uploading image.png…]()
+
+
 
 JavaScript supports various operators:
 
