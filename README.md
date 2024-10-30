@@ -78,6 +78,8 @@ As a general rule, always declare a variable with const unless you know that t
 
 
 
+![image](images/a.png)
+
 
 
 
