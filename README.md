@@ -102,6 +102,8 @@ Arithmetic operators are used to perform arithmetic on numbers:
 
 ![image](https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png)
 
+[![Screenshot-2024-10-30-145910.png](https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png)](https://postimg.cc/jwQSpsqg)
+
 
 https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png
 
