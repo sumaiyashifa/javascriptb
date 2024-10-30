@@ -99,10 +99,7 @@ Output:1
 
 Arithmetic operators are used to perform arithmetic on numbers:
 
-
-![image](https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png)
-<img src="https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png">
-
+<img src="https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png" width="700" height="440">
 
 Operator precedence describes the order in which operations are performed in an arithmetic expression.
 
