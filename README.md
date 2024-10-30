@@ -101,12 +101,16 @@ Arithmetic operators are used to perform arithmetic on numbers:
 
 
 ![image](https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png)
+<img src="https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png">
 
-[![Screenshot-2024-10-30-145910.png](https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png)](https://postimg.cc/jwQSpsqg)
+
+Operator precedence describes the order in which operations are performed in an arithmetic expression.
 
 
-https://i.postimg.cc/sXbGZXkr/Screenshot-2024-10-30-145910.png
-
+```
+Example
+let x = 100 + 50 * 3;
+```
 ---
 
 ## 2. Operators
