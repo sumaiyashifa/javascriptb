@@ -73,16 +73,33 @@ JavaScript uses different operators to perform calculations, comparisons, and ot
 ```javascript
 let x = 5;
 let y = 2;
-let z = x % y; // Output: 1
+let z = x % y; //  1
 ```
 
 ### Assignment Operators
+
+
+| Operator | Description                     | Example             | Equivalent Expression    |
+|----------|---------------------------------|---------------------|--------------------------|
+| `=`      | Assigns right-hand value to left-hand variable | `x = 5`           | `x = 5`                  |
+| `+=`     | Adds and assigns               | `x += 2` (same as `x = x + 2`) | `x = x + 2`              |
+| `-=`     | Subtracts and assigns          | `x -= 2` (same as `x = x - 2`) | `x = x - 2`              |
+| `*=`     | Multiplies and assigns         | `x *= 2` (same as `x = x * 2`) | `x = x * 2`              |
+| `/=`     | Divides and assigns            | `x /= 2` (same as `x = x / 2`) | `x = x / 2`              |
+| `%=`     | Modulus and assigns            | `x %= 2` (same as `x = x % 2`) | `x = x % 2`              |
+| `**=`    | Exponentiation and assigns     | `x **= 2` (same as `x = x ** 2`) | `x = x ** 2`             |
+| `<<=`    | Left shift and assigns         | `x <<= 2` (same as `x = x << 2`) | `x = x << 2`             |
+| `>>=`    | Right shift and assigns        | `x >>= 2` (same as `x = x >> 2`) | `x = x >> 2`             |
+| `&=`     | Bitwise AND and assigns        | `x &= 2` (same as `x = x & 2`) | `x = x & 2`              |
+| `|=`     | Bitwise OR and assigns         | `x |= 2` (same as `x = x | 2`) | `x = x | 2`              |
+| `^=`     | Bitwise XOR and assigns        | `x ^= 2` (same as `x = x ^ 2`) | `x = x ^ 2`              |
+
 - JavaScript uses an assignment operator ( = ) to assign values to variables:
-![image](https://github.com/user-attachments/assets/b59f3967-3a77-4c95-bab2-30a26e9729e8)
+
 
 ```javascript
 let text = "Hello";
-text += " World"; // Output: Hello World
+text += " World"; // Hello World
 ```
 ### Simple Assignment and Chaining:
 
@@ -185,7 +202,7 @@ The conditional (ternary) operator is the only JavaScript operator that takes th
 ```javascript
 let age = 18;
 let result = age > 18 ? "adult" : "notAdult";
-console.log(result); // Output: notAdult
+console.log(result); // notAdult
 ```
 ### JavaScript String Operators:
 
@@ -256,59 +273,111 @@ const time = new Date();
 ```
 ```
 const myArray = [1, 2, 3];
-console.log(myArray instanceof Array);    // Output: true
-console.log(myArray instanceof Object);   // Output: true
-console.log(myArray instanceof Date);     // Output: false
+console.log(myArray instanceof Array);    // true
+console.log(myArray instanceof Object);   //  true
+console.log(myArray instanceof Date);     //  false
 ```
 ---
 
 ## 3. Data Types
+JavaScript variables can hold numbers like 100 and text values like "John Doe".In programming, text values are called text strings.JavaScript can handle many types of data, but for now, just think of numbers and strings. Strings are written inside double or single quotes. Numbers are written without quotes.If you put a number in quotes, it will be treated as a text string.
 
 JavaScript has the following data types:
 
 - **Primitive**: `String`, `Number`, `BigInt`, `Boolean`, `Undefined`, `Null`, `Symbol`
 - **Complex**: `Object` (e.g., arrays, functions, maps, sets)
-
-```javascript
-let name = "John"; // String
-let age = 30;      // Number
-let isActive = true; // Boolean
 ```
+// Numbers:
+let length = 16;
+let weight = 7.5;
 
-### `typeof` Operator
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
 
-```javascript
-typeof "Hello";        // "string"
-typeof 42;             // "number"
-typeof true;           // "boolean"
-typeof { name: 'John' }; // "object"
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+
+//Symbol :
+let symbol1 = Symbol("Khan")
+let symbol2 = Symbol("Khan")
+  
+// Each time Symbol() method  is used to create new global Symbol
+console.log(symbol1 == symbol2); // False (because symbols are always unique)
 ```
-
-### `instanceof` Operator
-
-```javascript
-const myArray = [1, 2, 3];
-console.log(myArray instanceof Array); // true
+When adding a number and a string, JavaScript will treat the number as a string.
 ```
-
+let x = "5" + "world";
+```
 ---
 
 ## 4. Functions
+A JavaScript function is a block of code designed to perform a particular task.It is executed when "something" invokes it (calls it).
+```
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+```
+#### JavaScript Function Syntax
+- A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+- Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+- The parentheses may include parameter names separated by commas:(parameter1, parameter2, ...)
+- The code to be executed, by the function, is placed inside curly brackets: {}
+- Function parameters are listed inside the parentheses () in the function definition.
+- Function arguments are the values received by the function when it is invoked.
+- Inside the function, the arguments (the parameters) behave as local variables.
+```
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+```
+#### Function Invocation
+- The code inside the function will execute when "something" invokes (calls) the function:
+- When an event occurs (when a user clicks a button)
+- When it is invoked (called) from JavaScript code
+- Automatically (self invoked)
+#### Function Return
+- When JavaScript reaches a return statement, the function will stop executing.
+- If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking 
+  statement.
+- Functions often compute a return value. The return value is "returned" back to the "caller":
+
 
 Functions define reusable blocks of code.
 
-### Function Types
+#### Function Types
 
 - **Normal Function**:
-  ```javascript
-  function add(a, b) {
-    return a + b;
-  }
+ ```
+ function countvowel(str){
+    let c=0;
+    for(const char of str){
+        if(char=="a"||char=="e"||char=="i"||char=="o"||char=="u"){
+            c++;
+        }
+    }
+    console.log(c);
+}
+countvowel("i am a girl");
+
   ```
 
 - **Arrow Function**:
-  ```javascript
-  const subtract = (a, b) => a - b;
+ ```javascript
+const arrowmul = (a,b) => {
+    return a*b;
+};
   ```
 
 - **Bind Function**:
@@ -323,17 +392,67 @@ Functions define reusable blocks of code.
 ## 5. Loops
 
 Loops are used to repeat code.
+#### The For Loop
+The for statement creates a loop with 3 optional expressions:
+```
+for (expression 1; expression 2; expression 3) { // code block to be executed}
+```
+**Expression 1** is executed (one time) before the execution of the code block.
+**Expression 2** defines the condition for executing the code block.
+**Expression 3** is executed (every time) after the code block has been executed.
 
-### Examples:
 
-- **for loop**:
   ```javascript
-  for (let i = 0; i < 5; i++) {
-    console.log(i);
-  }
+ let arr=[1,2,3,4,5]
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+ }
   ```
+##### For of
+```
+let item =[10,20,30,40];
+let i=0;
+for(let val of item){
+    console.log(`value at index ${i}=${val}`);
+    let offer=val/10;
+    item[i]=item[i]-offer;
+    console.log(`after offer ${item[i]}`)
+    i++;
+}
+```
+```
+//Output:
+value at index 0=10
+java.js:40
+after offer 9
+java.js:43
+value at index 1=20
+java.js:40
+after offer 18
+java.js:43
+value at index 2=30
+java.js:40
+after offer 27
+java.js:43
+value at index 3=40
+java.js:40
+after offer 36
+```
+##### For in
+```
+const person = {fname:"John", lname:"Doe", age:25};
 
-- **while loop**:
+let text = "";
+for (let x in person) {
+  text += person[x]; //John Doe 25
+}
+```
+#### while loop:
+- **The while loop loops through a block of code as long as a specified condition is true.**
+```
+while (condition) { // code block to be executed}
+````
+
   ```javascript
   let i = 0;
   while (i < 5) {
@@ -345,20 +464,43 @@ Loops are used to repeat code.
 ---
 
 ## 6. Objects
+You have already learned that JavaScript variables are containers for data values.Objects are variables too. But objects can contain many values. This code assigns many values (Fiat, 500, white) to a variable named car:The values are written as name:value pairs (name and value separated by a colon).
 
-Objects are collections of key-value pairs.
+```
+const car = {type:"Fiat", model:"500", color:"white"};
+```
+#### Creating an Object
+```
+const student={
+    name:"shifa",
+    ispresent:true,
+};
+let output=`My name is ${student.name} \npresent is ${student.ispresent}`
+console.log(output);
 
-### Creating an Object
+// My name is shifa
+// present is true
+```
+Objects can also have methods.Methods are actions that can be performed on objects.Methods are stored in properties as function definitions.A method is a function stored as a property.
 
-```javascript
-let person = {
-  name: "John",
-  age: 30,
-  greet: function() {
-    console.log("Hello, " + this.name);
+#### Creating an Object with Method
+```
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
   }
 };
 ```
+#### Accessing Object Methods
+objectName.methodName()
+- name = person.fullName();
+
+
+
+
 
 ---
 
@@ -378,4 +520,3 @@ try {
 
 ---
 
-This is a brief overview of essential JavaScript concepts. Each section can be further explored for an in-depth understanding.
